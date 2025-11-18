@@ -9,6 +9,7 @@ function App() {
   
   const [budgetMode, setBudgetMode] = useState(false)
 
+
   return (
     <>
     <BudgetContext.Provider value={{budgetMode, setBudgetMode}}>

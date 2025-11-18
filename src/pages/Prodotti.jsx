@@ -10,6 +10,9 @@ import { useContext } from 'react'
 export default function Prodotti() {
 
     const [prodotti, setProdotti] = useState([])
+      const { budgetMode } = useContext(BudgetContext)
+
+      
 
     const url = 'https://fakestoreapi.com/products'
 
@@ -22,7 +25,7 @@ export default function Prodotti() {
             setProdotti(res.data)
         )
     }
-
+    const prodottiFiltrati = budgetMode ? prodotti.filter(filtrati =>filtrati.price <= 30) : prodotti
 
     return(
         <>
@@ -33,7 +36,7 @@ export default function Prodotti() {
         <div className='row'>
      
      {
-        prodotti.map(prodotto => (
+        prodottiFiltrati.map(prodotto => (
             <div key={prodotto.id} className='col-4 card py-3'>
                 <div className='card-top'>
                     <img src={prodotto.image} alt={prodotto.title} />

@@ -5,7 +5,7 @@ import { useContext } from 'react'
 
 export default function Header() {
 
-    
+    const {budgetMode, setBudgetMode} = useContext(BudgetContext)
 
     return(
 <>
@@ -20,7 +20,7 @@ export default function Header() {
          <Link className="nav-link" aria-current="page" to="/Prodotti">Prodotti</Link>
      </li>
      <li className="nav-item ">
-        <button type="button" className="btn btn-success">Premi per attivare la modalità budget</button>
+        <button type="button" className="btn btn-success" onClick={() => setBudgetMode(!budgetMode)} >  { budgetMode ? "Disattiva Modalità Budget"  : "Attiva Modalità Budget" }</button>
      </li>
    
         </ul>
