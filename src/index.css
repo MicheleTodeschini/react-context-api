@@ -1,0 +1,63 @@
+@import url('bootstrap');
+@import url('bootstrap-icons');
+
+/*Css for the Products page*/
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  height: 700px;
+  display: flex;
+}
+
+.card-top img {
+  height: 300px;
+}
+
+.card-top {
+    display: flex;
+     justify-content: center;
+}
+
+.description {
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.products-ul {
+    padding-top: 2rem;
+}
+
+/*CSS for the about us page*/
+
+.container-left img {
+    max-width: 100%;
+    height: 500px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+.container-right {
+    padding: 1rem;
+}
+
+/*CSS for the HomePage*/
+
+.jumbotron img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*da fare footerQWQ*/
