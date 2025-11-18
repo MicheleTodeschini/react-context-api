@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import BudgetContext from '../contexts/BudgetContext'
+import { useContext } from 'react'
 
 
 export default function Prodotti() {
