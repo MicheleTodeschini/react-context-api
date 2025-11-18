@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>} /> 
@@ -16,7 +17,7 @@ function App() {
         <Route path='/Prodotto/:id' element={<Prodotto />} />
         </Routes>
      </BrowserRouter>
-
+      
     </>
   )
 }
